@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang=en>
+<head>
+    <title>index</title>
+    <meta charset="utf-8">
+<style>
+
+
+            body{
+                  background-image: url("file:///home/sam/Desktop/homepg/img/bk1.jpg");
+
+                }
+              #tit
+              {
+                font-weight: 800;
+                font-size: 30px;
+              font-family: Copperplate Gothic Light, sans-serif;
+             
+              text-align: center;
+              }
+              
+             #logo{
+                float:left;
+             }
+             #tit1{
+                margin-top: 80px;
+             }
+           #reg{
+                float: right;
+                margin-top: 1px;
+               display: inline;
+               padding-bottom: 30px;
+               }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: black;
+}
+
+li {
+    float: left;
+}
+
+a:link, a:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: #d52727;
+    background-color: #e2af3c;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #7A991A;
+}
+
+.abc{
+margin-left: 60px;
+}
+
+#g1
+{
+    text-shadow:#ff0000;
+}
+div.frm{
+  line-height: 18px;
+  margin-left: 300px;
+}
+
+</style>
+
+
+</head>
+
+               <body>
+                 <div class="headtext">
+                   <img id="logo" src="img/fsmk.png">
+                   <span id="tit"> <h1>Sunday School</h1></span>
+                   <div><center>An FSMK Initiative</center></div>
+                   <hr>
+                 <h3 style="color:brown;"><center>Sign In</center></h3>
+
+                   
+
+<hr>
+                </div> 
+                <div class="frm">
+                <form >
+                        <hr/>
+                        
+
+                        First Name :<br><input id="fn" class="abc" type="text" placeholder="firstname" name="fname"><br><br>
+			Last Name :<br><input id="lsn" class="abc" type="text" placeholder="lastname" name="lname"><br><br>
+                        Email :<br><input id="em"class="abc" type="text" placeholder="name@example.com" name="email"><br><br>
+                        Username :<br><input id="un"class="abc" type="text" placeholder="select a name" name="username"><br><br>
+                        Select Password :<br><input id="sp" class="abc" type="password" name="spass"><br><br>
+			Confirm Password :<br><input id="cp" class="abc" type="password" name="cpass"><br><br>
+			</div>
+                        
+                        <center><input type="submit" value="sign up"></center>
+
+
+ var y= document.getElementById('lsn').value;
+    var z= document.getElementById('un').value;
+    var pass2= document.getElementById('spass').value;
+    var b= document.getElementById('cpass').value;
+    var c= document.getElementById('em').value;
+    var fname= document.getElementById('fname');
+    var uname= document.getElementById('Uname');
+    var ename= document.getElementById('Ename');
+    var pas= document.getElementById('pas');
+    var pass2= document.getElementById('pass2');
+    function findEmpty(para1,para2)
+    {
+    if(para1.lenght==null|| para.lenght=='')
+    
+    {
+         para2.innerHTML='field empty';
+    }
+    }
+    function Num()
+    {
+    if(z.charAt(0)=='0'||z.charAt(0)=='1'||z.charAt(0)=='2'||z.charAt(0)=='3'||z.charAt(0)=='4'||z.charAt(0)=='5'||z.charAt(0)=='6'||z.charAt(0)=='6'||z.charAt(0)=='7'||z.charAt(0)=='8'||z.charAt(0)=='9')
+          uname.innerHTML='Username should not begin with a number';
+     
+
+
+     }
+     
+
+        findEmpty(z,fname);
+        findEmpty(b,pas);
+        findEmpty(c,pass2);
+        findEmpty(em,ename);
+
+                
+
+
+
+
+              </body>
+</html>
+

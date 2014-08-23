@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gdgvjhd</title>
+</head>
+<body>
+<form name="demo" onsubmit="return validateFormOnSubmit(this)" action="test.htm">
+<table summary="Demonstration form">
+  <tbody>
+  <tr>
+    <td><label for="username">Your user name:</label></td>
+    <td><input name="username" size="35" maxlength="50" type="text"></td>
+  </tr>   
+  <tr>
+    <td><label for="pwd">Your password</label></td>
+    <td><input name="pwd" size="35" maxlength="25" type="password"></td>
+  </tr>   
+  <tr>
+    <td><label for="email">Your email:</label></td>
+    <td><input name="email" size="35" maxlength="30" type="text"></td>
+  </tr>   
+  <tr>
+    <td><label for="phone">Your telephone number:</label></td>
+    <td><input name="phone" size="35" maxlength="25" type="text"></td>
+  </tr>   
+  <tr>
+    <td>
+        <label for="from">Where are you :</label></td>
+    <td><input name="from" size="35" maxlength="50" type="text"></td>
+  </tr>   
+  <tr>
+    <td>&nbsp;</td>
+    <td><input name="Submit" value="Send" type="submit" ></td>
+    <td>&nbsp;</td>
+  </tr> 
+  </tbody>
+</table>
+</form> 
+</body>
+<script type="text/javascript">
+	
+var a = document.getElementById('tt');
+	function changeColor() 
+{
+
+a.style.backgroundColor='#f3d67d';
+a.style.opacity='0.5';          
+}
+function removeColor() 
+{
+
+a.style.backgroundColor='';
+a.style.opacity='';          
+}
+a.addEventListener('mouseover', changeColor);
+a.addEventListener('mouseout', removeColor);
+
+
+
+</script>
+</html>
